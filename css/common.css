@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+html,body,div,p,h1,h2,ul,li,canvas,video{padding:0; margin:0;}
+/*
+::scrollbar{
+	width:0;
+	height:0;
+}*/
+
+html{
+	width:300px;
+	height:480px;
+	overflow:hidden;
+	}
+#video, #resultImage, #brushPanel, #resultImage canvas, #debug, div#shutter {
+	position: absolute;
+	top: 0;
+	background: "red";
+}
+#resultImage {
+	position: relative;
+}
+#shotBtn {
+	position: absolute;
+}
+canvas{
+	}
+#debug {
+	right: 0;
+}
+
+video{
+	top:0;
+	left:0;
+}
+div#shotBtn{
+	width:166px;
+	height:42px;
+	margin-left:-83px;
+	left:50%;
+	bottom:20px;
+}
+div#brushPanel{
+	width:300px;
+	top:455px;
+	left:0;
+	transition:all 0.2s;
+	-o-transition:all 0.2s;
+	-webkit-transition:all 0.2s;
+}
+div#brushPanel p{
+	height:37px;
+	}
+div#brushPanel ul{
+	padding-top:5px;
+	padding-left:3px;
+	background:url(../img/brush_bg.png) no-repeat 0 0;
+	}
+div#brushPanel ul li{
+	display:inline-block;
+	width:70px;
+	margin-bottom:8px;
+	text-align:center;
+}
+div#brushPanel:hover ul{
+}
+
+#debug {
+	color: white;
+	background: #222;
+}
+
+div#shutter {
+	z-index: -1;
+}
+
+
+/*-- top --*/
+
+#top{
+	position:absolute;
+	}
+#top_btn{
+	position:absolute;
+	top:348px;
+	margin-left:-83px;
+	left:50%;
+	}

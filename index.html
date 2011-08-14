@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+    window.onload = function() {
+        setTimeout(doScroll, 100);
+    }
+    function doScroll() {
+        if (window.pageYOffset == 0) {
+            window.scroll(0, 1);
+        }
+				}
+</script>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body>
+	<div id="top"><img src="img/top.jpg" alt></div>
+	<div id="top_btn"><a href="top.html"><img src="img/top_btn.png" alt></a></div>
+</body>
+</html>
